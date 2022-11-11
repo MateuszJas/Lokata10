@@ -10,18 +10,16 @@ namespace Lokata10
     {
         static void Main(string[] args)
         {
-            double lok = 10000;
-            double oprocentowanie = 0.05 / 12;
-            double zysk = 0;
-            
-            for (int m = 0; m < 12; m++)
+            double lok = 10000, m;
+            double procenty = 0.05 / 12;
+                        
+            for ( m = 0; m < 12; m++)
             {
 
-                zysk = lok + (lok * oprocentowanie);
+                lok = lok + (lok * procenty);
 
-                lok = zysk;
+                
             }
-
            
             Console.WriteLine("Razem = {0:C} ", lok );
                 
